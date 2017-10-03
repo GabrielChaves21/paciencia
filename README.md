@@ -4,4 +4,4 @@ Possui um sistema inteligente que salva os baralhos que tem solução, evitando 
 
 ![Tela do Jogo](_media/screenshot.png)
 
-Agradecimentos à _Vinicius_! _Xavier_!, co-autor do projeto, e da minha turma de Informática, que apoiou o projeto
+Agradecimentos à *Vinicius* *Xavier*, co-autor do projeto, e da minha turma de Informática, que apoiou o projeto
