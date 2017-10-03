@@ -1,0 +1,53 @@
+/*APARÊNCIA DAS CARTAS*/
+.carta{
+  width: 7vw;
+  height: 20vh;
+  margin: .1em;
+  background: #000;
+}
+.um div.carta{
+  position: absolute;
+  left: 0vw;
+  border: .3em solid #777;
+  z-index: 2;
+}
+/*APARÊNCIA DAS CAIXAS*/
+.caixa{
+  background: #6a6;
+  border: .5em solid;
+}
+  .um{
+    width: 16vw;
+    height: 22vh;
+    border-color: #383;
+
+    position: absolute;
+    left: 24.5vw;
+    top: 5vh;
+  }
+  .dois{
+    width: 51vw;
+    height: 22vh;
+    border-color: #383;
+
+    position: absolute;
+    left: 24.5vw;
+    top: 32vh;
+  }
+  .tres{
+    width: 30vw;
+    height: 22vh;
+    border-color: #383;
+
+    position: absolute;
+    left: 45.5vw;
+    top: 5vh;
+  }
+  #voltarBaralho{
+    position: absolute;
+    z-index: 1;
+    width: 9vw;
+
+    left: -0.5vw;
+    top: .5vw;
+  }
