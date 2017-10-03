@@ -8,7 +8,7 @@
 .um div.carta{
   position: absolute;
   left: 0vw;
-  border: .3em solid #777;
+  border: .3em solid #fff;
   z-index: 2;
 
 }
