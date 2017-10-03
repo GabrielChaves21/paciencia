@@ -13,6 +13,7 @@ const PAUS = 1; COPAS = 2, ESPADAS = 3, OUROS = 4;
 var naipes = [PAUS,COPAS,ESPADAS,OUROS];
 var naipeString = ["paus", "copas", "espadas", "ouros"];
 var cartasSelecionadas = [13]; //Carta
+var zIndex = 0; //Variável para mudar o zIndex das caratas no baralho;  
 
 // FUNÇÕES GLOBAIS
 
@@ -33,9 +34,11 @@ function init (){
 }
 
 function voltar(e){
+  zIndex = 0;
   for(i = 0; i < baralho.length; i++){ // passa por todo o baralho
     debug(baralho[i].virada);
-    $(baralho[i].elem).css({left:"0vw",background:"#000"}); //Muda a posição da carta e "vira"
+    $(baralho[i].elem).css({left:"0vw",background:"#000",zIndex:zIndex}); //Muda a posição da carta, vira e coloca de volta na posição original, na ordem original
+    zIndex += 1;
     baralho[i].virada = true;
   }
 }
@@ -43,9 +46,10 @@ function voltar(e){
 function mostrar(e){
   var clicada = e.target; //Pega a referência da carta clicada
   var obj = document.getElementById($(clicada).attr("id")).carta;
-  $(clicada).css({left:"8vw",backgroundImage:"../_media/"+obj.naipe+""+obj.valor+".png"}); //Muda a posição da carta e "vira", implementar imagens
+  $(clicada).css({left:"8vw",background:"10px 10px url('_media/"+obj.naipe+""+obj.valor+".png')",backgroundSize:"contain",backgroundPosition:"center",zIndex:zIndex}); //Muda a posição da carta, muda o atributo virar e muda o zIndex para que as cartas se empilhem
   obj.virada = false; //Define o atributo virada como false
-  debug("../_media/"+obj.naipe+""+obj.valor+".png");
+  debug("_media/"+obj.naipe+""+obj.valor+".png");
+  zIndex += 1;
   // debug(document.getElementById($(clicada).attr("id")).carta.virada);
 }
 

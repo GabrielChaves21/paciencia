@@ -10,6 +10,7 @@
   left: 0vw;
   border: .3em solid #777;
   z-index: 2;
+
 }
 /*APARÊNCIA DAS CAIXAS*/
 .caixa{
@@ -45,7 +46,7 @@
   }
   #voltarBaralho{
     position: absolute;
-    z-index: 1;
+    z-index: 0;
     width: 9vw;
 
     left: -0.5vw;
