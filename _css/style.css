@@ -1,54 +1,92 @@
+body{background: #6a6}
 /*APARÊNCIA DAS CARTAS*/
 .carta{
   width: 7vw;
   height: 20vh;
   margin: .1em;
   background: #000;
+  position: absolute;
 }
 .um div.carta{
-  position: absolute;
-  left: 0vw;
+  left: 1vw;
+  top: .7vh;
   border: .3em solid #fff;
   z-index: 2;
-
 }
 /*APARÊNCIA DAS CAIXAS*/
 .caixa{
   background: #6a6;
-  border: .5em solid;
+  border: .2em solid;
+  border-radius: 1em;
+  z-index: -11;
 }
-  .um{
-    width: 16vw;
-    height: 22vh;
-    border-color: #383;
+.um{
+  width: 18vw;
+  height: 23vh;
+  border-color: #383;
 
-    position: absolute;
-    left: 24.5vw;
-    top: 5vh;
-  }
-  .dois{
-    width: 51vw;
-    height: 22vh;
-    border-color: #383;
+  position: absolute;
+  left: 24.5vw;
+  top: 5vh;
+}
+.dois{
+  width: 57.2vw;
+  height: 50vh;
+  border: none;
 
-    position: absolute;
-    left: 24.5vw;
-    top: 32vh;
-  }
-  .tres{
-    width: 30vw;
-    height: 22vh;
-    border-color: #383;
+  position: absolute;
+  left: 24.5vw;
+  top: 36vh;
+}
+.tres{
+  width: 33vw;
+  height: 23vh;
+  border-color: #383;
 
-    position: absolute;
-    left: 45.5vw;
-    top: 5vh;
-  }
-  #voltarBaralho{
-    position: absolute;
-    z-index: 0;
-    width: 9vw;
+  position: absolute;
+  left: 48vw;
+  top: 5vh;
+}
+#voltarBaralho{
+  position: absolute;
+  z-index: 0;
+  width: 9vw;
 
-    left: -0.5vw;
-    top: .5vw;
-  }
+  left: 0.2vw;
+  top: 1.3vw;
+}
+.pontos{
+  position: absolute;
+  left: 0vw;
+  top: 5vh;
+  height: 20vh;
+  width: 18vw;
+
+  background: #383;
+  border: #fff solid;
+  border-width: .5em .5em .5em 0em;
+  border-radius: 0em 2em 2em 0em;
+
+  font-family: Trebuchet MS;
+  text-indent: .5em
+}
+/*PILHAS*/
+.pilha{
+  background-color: #8f8;
+  border: .1em #8f8 solid;
+  width: 7vw;
+  height: 20vh;
+
+  position: absolute;
+  z-index: -10;
+}
+.um div.pilha{
+  left: 1.1vw;
+  top: 1.4vh;
+}
+#ca31{left:1vw;top:1.4vh;}#ca32{left:9vw;top:1.4vh;}
+#ca33{left:17vw;top:1.4vh;}#ca34{left:25vw;top:1.4vh;}
+#ca21{left:1vw;top:1.4vh;}#ca22{left:9vw;top:1.4vh;}
+#ca23{left:17vw;top:1.4vh;}#ca24{left:25vw;top:1.4vh;}
+#ca25{left:33vw;top:1.4vh;}#ca26{left:41vw;top:1.4vh;}
+#ca27{left:49vw;top:1.4vh;}

@@ -1,35 +1,39 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Paciência</title>
-    <link rel="stylesheet" href="_css/style.css">
-    <script type="text/javascript" src="_script/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="_script/classes.js"></script>
-    <script type="text/javascript" src="_script/main.js"></script>
-  </head>
-  <body onload="init()">
-    <div class="box-main">
-      <div class="caixa um">
-        <img src="_media/rosto.png" id="voltarBaralho" onclick="voltar(event)"/>
-        <div class="pilha" id="c11"></div>
-        <div class="pilha" id="c12"></div>
-      </div>
-      <div class="caixa dois" onclick="">
-        <div class="pilha" id="c21"></div>
-        <div class="pilha" id="c22"></div>
-        <div class="pilha" id="c23"></div>
-        <div class="pilha" id="c24"></div>
-        <div class="pilha" id="c25"></div>
-        <div class="pilha" id="c26"></div>
-        <div class="pilha" id="c27"></div>
-      </div>
-      <div class="caixa tres">
-        <div class="pilha" id="c31"></div>
-        <div class="pilha" id="c32"></div>
-        <div class="pilha" id="c33"></div>
-        <div class="pilha" id="c34"></div>
-      </div>
+<head>
+  <meta charset="utf-8">
+  <title>Paciência</title>
+  <link rel="stylesheet" href="_css/style.css">
+  <script type="text/javascript" src="_script/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="_script/classes.js"></script>
+  <script type="text/javascript" src="_script/main.js"></script>
+</head>
+<body onload="init()">
+  <div class="box-main">
+    <div class="caixa um">
+      <img src="_media/rosto.png" id="voltarBaralho" onclick="voltar(event)"/>
+      <div class="pilha" id="ca11"></div>
+      <div class="pilha" id="ca12"></div>
     </div>
-  </body>
+    <div class="caixa dois" onclick="">
+      <div class="pilha" id="ca21"></div>
+      <div class="pilha" id="ca22"></div>
+      <div class="pilha" id="ca23"></div>
+      <div class="pilha" id="ca24"></div>
+      <div class="pilha" id="ca25"></div>
+      <div class="pilha" id="ca26"></div>
+      <div class="pilha" id="ca27"></div>
+    </div>
+    <div class="caixa tres">
+      <div class="pilha" id="ca31"></div>
+      <div class="pilha" id="ca32"></div>
+      <div class="pilha" id="ca33"></div>
+      <div class="pilha" id="ca34"></div>
+    </div>
+    <div class="pontos">
+      <h1>Pontos: 0</h1>
+      <h1 id="tempo">Tempo: 0s</h1>
+    </div>
+  </div>
+</body>
 </html>
