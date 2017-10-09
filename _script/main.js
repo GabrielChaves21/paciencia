@@ -14,7 +14,7 @@ var naipes = [PAUS,COPAS,ESPADAS,OUROS];
 var naipeString = ["paus", "copas", "espadas", "ouros"];
 var cartasSelecionadas = [13]; //Carta
 var zIndex = 0; //Variável para mudar o zIndex das caratas no baralho;
-var tempo, segundos = 1; //Variáveis pra contar o tempo
+var tempo, seg = 1, min = 0; //Variáveis pra contar o tempo
 
 // FUNÇÕES GLOBAIS
 
@@ -36,10 +36,10 @@ function init (){
 }
 function timer(){
   tempo = setInterval(function(){
-    if(segundos < 60){
-      $('#tempo').text("Tempo: "+(segundos++)+"s");
-    }else if (segundos < 240) {
-      $('#tempo').text("Tempo: "+(Math.floor(segundos/60)+"m"+(segundos++)+"s"));
+    $("#tempo").text("Tempo: "+(min < 10?"0"+min:min)+":"+(seg < 10?"0"+seg:seg));
+    if(++seg > 59){
+    	seg = 0;
+    	min++;
     }
   }, 1000);
 }
